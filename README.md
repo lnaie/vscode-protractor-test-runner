@@ -4,7 +4,7 @@
 
 Protractor Test Runner is a [VS Code][vscode] extension which enables you to right-click on a .ts file and test it with Protractor.
 
-It assumes you have Protractor installed (http://www.protractortest.org) and this extension is ran in context of a project that has protractor test files.
+It assumes you have Protractor installed (http://www.protractortest.org) and this extension is ran in context of a project that has protractor test files. It can be tested with "Angular 2 Starter kit" (https://github.com/AngularClass/angular2-webpack-starter).
 
 ## Usage
 ### Run Protractor Test(s)

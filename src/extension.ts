@@ -2,7 +2,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-var spawnCMD = require('spawn-command');
+var spawnCmd = require('spawn-command');
 var treeKill = require('tree-kill');
 var process = null;
 var commandOutput: vscode.OutputChannel = null;
@@ -11,7 +11,7 @@ var commandOutput: vscode.OutputChannel = null;
 // The extension is activated the very first time the command is executed.
 export function activate(context: vscode.ExtensionContext) {
     // Register a new output channel
-    var commandOutput = vscode.window.createOutputChannel('ProtractorTestRunnerLog');
+    commandOutput = vscode.window.createOutputChannel('ProtractorTestRunnerLog');
     context.subscriptions.push(commandOutput);
 
     // Register protractorTestRunner cmd
@@ -40,6 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 // This method is called when the extension is deactivated
 export function deactivate() {
+    // Clean up
     killActiveProcess();
 };
 
@@ -48,8 +49,7 @@ function startProcess(filePath: string) {
     // Already running one?
     if (process) {
         const msg = 'There is a command running right now. Terminate it before executing a new command?';
-        vscode.window
-            .showWarningMessage(msg, 'Ok', 'Cancel')
+        vscode.window.showWarningMessage(msg, 'Ok', 'Cancel')
             .then((choice) => {
                 if (choice === 'Ok') {
                     killActiveProcess();
@@ -102,7 +102,7 @@ function runShellCommand(cmd:string, cwd:string) {
             opts.cwd = cwd;
         }
 
-        process = spawnCMD(cmd, opts);
+        process = spawnCmd(cmd, opts);
         process.stdout.on('data', printOutputDelegate);
         process.stderr.on('data', printOutputDelegate);
         process.on('close', (status) => {
