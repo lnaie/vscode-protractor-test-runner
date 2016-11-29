@@ -2,7 +2,7 @@
     "name": "protractor-test-runner",
     "displayName": "Protractor Test Runner",
     "description": "Enables you to right-click on an .e2e.ts file and test it with Protractor.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "luciannaie",
     "engines": {
         "vscode": "^1.5.0"
