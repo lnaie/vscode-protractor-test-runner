@@ -1,8 +1,8 @@
 {
     "name": "protractor-test-runner",
     "displayName": "Protractor Test Runner",
-    "description": "Enables you to right-click on a .ts file and test it with Protractor. You need to have Protractor installed.",
-    "version": "1.0.0",
+    "description": "Enables you to right-click on a .ts file and test it with Protractor. It requires to have Protractor installed.",
+    "version": "1.1.0",
     "publisher": "luciannaie",
     "engines": {
         "vscode": "^1.5.0"
