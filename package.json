@@ -1,0 +1,60 @@
+{
+    "name": "protractor-test-runner",
+    "displayName": "Protractor Test Runner",
+    "description": "Enables you to right-click on an .e2e.ts file and test it with Protractor.",
+    "version": "0.0.1",
+    "publisher": "lnaie",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/lnaie/vscode-protractor-test-runner.git"
+	},    
+    "categories": [        
+        "Debuggers", "Linters", "Other"
+    ],
+    "preview": true,
+    "activationEvents": [
+        "onCommand:extension.protractorTestRunner",
+        "onCommand:extension.protractorTestRunnerLog"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.protractorTestRunner",
+            "title": "Protractor: Run test(s)"
+        }, {
+            "command": "extension.protractorTestRunnerLog",
+            "title": "Protractor: Show runner log"
+        }],
+        "menus": {
+            "explorer/context": [{
+                "when": "resourceLangId == typescript",
+                "command": "extension.protractorTestRunner",
+                "group": "testing"
+            }]
+        },
+        "keybindings": [{
+            "command": "extension.protractorTestRunnerLog",
+            "key": "ctrl+f1",
+            "mac": "cmd+f1"
+        }]        
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "spawn-command": "0.0.2-1",
+        "tree-kill": "^1.1.0"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
