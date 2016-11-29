@@ -16,7 +16,7 @@ It assumes you have Protractor installed (http://www.protractortest.org) and the
 * Press `F1` and select the command with title: `Protractor: Show runner log`.
 
 ## Installation
-Hit `Ctrl+P` and enter the `ext install protractor-test-runner` command. **Warning:** select the extension authored by **lnaie**.
+Hit `Ctrl+P` and enter the `ext install protractor-test-runner` command. **Warning:** select the extension authored by **luciannaie**.
 
 ## Issues / Feature requests
 You can submit your issues and feature requests on the GitHub [issues page][issues].
@@ -26,10 +26,8 @@ You can submit your issues and feature requests on the GitHub [issues page][issu
 ## Credits
 It contains code from https://github.com/bbenoist/vscode-shell.
 
-[marketplace]: https://marketplace.visualstudio.com/items/lnaie.protractor-test-runner
+[marketplace]: https://marketplace.visualstudio.com/items/luciannaie.protractor-test-runner
 [gh-repo]: https://github.com/lnaie/vscode-protractor-test-runner
 [issues]: https://github.com/lnaie/vscode-protractor-test-runner/issues/
-[npm-dependencies]: https://david-dm.org/bbenoist/vscode-shell
-[npm-devdependencies]: https://david-dm.org/bbenoist/vscode-shell#info=devDependencies
 [license]: https://github.com/lnaie/vscode-protractor-test-runner/master/LICENSE
 [vscode]: https://code.visualstudio.com/
