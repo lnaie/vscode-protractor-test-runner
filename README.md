@@ -1,4 +1,4 @@
-# Shell for VS Code
+# Protractor Test Runner
 
 ## Description
 
@@ -8,12 +8,12 @@ It assumes you have Protractor installed (http://www.protractortest.org) and the
 
 ## Usage
 ### Run Protractor Test(s)
-Press `F1` and select the command with title: `Protractor: Run test(s)`.
-
-This will run Protractor on selected typescript file.
+* In VS Code project explorer, right click on a .ts or .e2e.ts file and choose option `Protractor: Run test(s)`.
+* Press `F1` and select the command with title: `Protractor: Run test(s)`. This will run Protractor on selected typescript file.
 
 ### Show Protractor Runner Log
-Press `F1` and select the command with title: `Protractor: Show runner log`.
+* Press Ctrl+F1 or Cmd+F1 (on Mac) to show the Protractor Runner Log.
+* Press `F1` and select the command with title: `Protractor: Show runner log`.
 
 ## Installation
 Hit `Ctrl+P` and enter the `ext install protractor-test-runner` command. **Warning:** select the extension authored by **lnaie**.
