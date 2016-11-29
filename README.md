@@ -2,13 +2,13 @@
 
 ## Description
 
-Protractor Test Runner is a [VS Code][vscode] extension which enables you to right-click on an .e2e.ts file and test it with Protractor.
+Protractor Test Runner is a [VS Code][vscode] extension which enables you to right-click on a .ts file and test it with Protractor.
 
-It assumes you have Protractor installed (http://www.protractortest.org) and the extensions are ran in context of a project that has protractor typescript test files.
+It assumes you have Protractor installed (http://www.protractortest.org) and this extension is ran in context of a project that has protractor test files.
 
 ## Usage
 ### Run Protractor Test(s)
-* In VS Code project explorer, right click on a .ts or .e2e.ts file and choose option `Protractor: Run test(s)`.
+* In VS Code project explorer, right click on a .ts file and choose option `Protractor: Run test(s)`.
 * Press `F1` and select the command with title: `Protractor: Run test(s)`. This will run Protractor on selected typescript file.
 
 ### Show Protractor Runner Log
@@ -16,10 +16,10 @@ It assumes you have Protractor installed (http://www.protractortest.org) and the
 * Press `F1` and select the command with title: `Protractor: Show runner log`.
 
 ## Installation
-Hit `Ctrl+P` and enter the `ext install protractor-test-runner` command. **Warning:** select the extension authored by **luciannaie**.
+Press `Ctrl+P` and enter command `ext install protractor-test-runner`.
 
 ## Issues / Feature requests
-You can submit your issues and feature requests on the GitHub [issues page][issues].
+You can submit your issues and feature requests on GitHub [issues page][issues].
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
