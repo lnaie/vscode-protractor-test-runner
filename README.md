@@ -24,7 +24,7 @@ You can submit your issues and feature requests on the GitHub [issues page][issu
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
 ## Credits
-It comntains code from https://github.com/bbenoist/vscode-shell.
+It contains code from https://github.com/bbenoist/vscode-shell.
 
 [marketplace]: https://marketplace.visualstudio.com/items/lnaie.protractor-test-runner
 [gh-repo]: https://github.com/lnaie/vscode-protractor-test-runner
