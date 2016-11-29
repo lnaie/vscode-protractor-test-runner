@@ -21,7 +21,7 @@ Hit `Ctrl+P` and enter the `ext install protractor-test-runner` command. **Warni
 ## Issues / Feature requests
 You can submit your issues and feature requests on the GitHub [issues page][issues].
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license] [![Dependency Status](https://david-dm.org/bbenoist/vscode-shell.svg)][npm-dependencies] [![devDependency Status](https://david-dm.org/bbenoist/vscode-shell/dev-status.svg)][npm-devdependencies]
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
 ## Credits
 It comntains code from https://github.com/bbenoist/vscode-shell.
